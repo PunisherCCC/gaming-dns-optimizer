@@ -52,7 +52,8 @@
 
 ## 📸 Screenshots
 
-<div align="center">
+<div align="center" <img width="1904" height="1005" alt="image" src="https://github.com/user-attachments/assets/b1ca6d7a-808c-406a-b71c-8517c6dfad77" />>
+
 
 ### Light Mode - DNS Benchmarking
 *Beautiful gradient background with frosted glass panels*
@@ -346,4 +347,5 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 [⬆ Back to Top](#-gaming-dns-optimizer)
 
 </div>
+
 
