@@ -1,0 +1,92 @@
+{
+  "en": {
+    "app": {
+      "title": "Gaming DNS Optimizer",
+      "subtitle": "Benchmarks DNS for latency, jitter, loss, and throughput. Suggests the best and applies with one click."
+    },
+    "buttons": {
+      "quickScan": "Quick Scan",
+      "fullScan": "Full Scan",
+      "applyBest": "Apply Best DNS",
+      "revert": "Revert DNS",
+      "flush": "Flush DNS Cache"
+    },
+    "table": {
+      "rank": "Rank",
+      "provider": "Provider",
+      "servers": "Servers",
+      "ping": "Ping avg (ms)",
+      "jitter": "Jitter (ms)",
+      "loss": "Loss (%)",
+      "down": "Down (Mbps)",
+      "up": "Up (Mbps)",
+      "score": "Score",
+      "action": "Action"
+    },
+    "dnsTest": {
+      "title": "Test Website Access with DNS",
+      "dnsServer": "DNS Server:",
+      "website": "Website:",
+      "testButton": "Test Access"
+    },
+    "restricted": {
+      "title": "Restricted sites check",
+      "checkButton": "Check Sites (Current DNS)"
+    },
+    "status": {
+      "scanning": "Scanning DNS providers...",
+      "complete": "Scan complete",
+      "applying": "Applying DNS...",
+      "applied": "DNS applied successfully",
+      "reverting": "Reverting DNS...",
+      "reverted": "DNS reverted successfully",
+      "flushing": "Flushing DNS cache...",
+      "flushed": "DNS cache flushed successfully"
+    }
+  },
+  "fa": {
+    "app": {
+      "title": "بهینه‌ساز DNS بازی",
+      "subtitle": "تست تاخیر، لرزش، از دست رفتن بسته و سرعت DNS. بهترین را پیشنهاد داده و با یک کلیک اعمال می‌کند."
+    },
+    "buttons": {
+      "quickScan": "اسکن سریع",
+      "fullScan": "اسکن کامل",
+      "applyBest": "اعمال بهترین DNS",
+      "revert": "بازگشت DNS",
+      "flush": "پاک‌سازی حافظه DNS"
+    },
+    "table": {
+      "rank": "رتبه",
+      "provider": "ارائه‌دهنده",
+      "servers": "سرورها",
+      "ping": "میانگین پینگ (ms)",
+      "jitter": "لرزش (ms)",
+      "loss": "از دست رفته (%)",
+      "down": "دانلود (Mbps)",
+      "up": "آپلود (Mbps)",
+      "score": "امتیاز",
+      "action": "عملیات"
+    },
+    "dnsTest": {
+      "title": "تست دسترسی وب‌سایت با DNS",
+      "dnsServer": "سرور DNS:",
+      "website": "وب‌سایت:",
+      "testButton": "تست دسترسی"
+    },
+    "restricted": {
+      "title": "بررسی سایت‌های محدود شده",
+      "checkButton": "بررسی سایت‌ها (DNS فعلی)"
+    },
+    "status": {
+      "scanning": "در حال اسکن ارائه‌دهندگان DNS...",
+      "complete": "اسکن کامل شد",
+      "applying": "در حال اعمال DNS...",
+      "applied": "DNS با موفقیت اعمال شد",
+      "reverting": "در حال بازگشت DNS...",
+      "reverted": "DNS با موفقیت بازگشت داده شد",
+      "flushing": "در حال پاک‌سازی حافظه DNS...",
+      "flushed": "حافظه DNS با موفقیت پاک شد"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "weights": {
+    "latency": 0.5,
+    "loss": 1.0,
+    "jitter": 0.3,
+    "throughputDown": 0.5,
+    "throughputUp": 0.2
+  },
+  "quick": {
+    "pingCount": 5,
+    "pingTimeoutMs": 900,
+    "downloadBytes": 3000000,
+    "uploadBytes": 1000000,
+    "resolveTries": 3
+  },
+  "full": {
+    "pingCount": 10,
+    "pingTimeoutMs": 1000,
+    "downloadBytes": 8000000,
+    "uploadBytes": 4000000,
+    "resolveTries": 5
+  },
+  "concurrency": 3,
+  "throughput": {
+    "host": "speed.cloudflare.com",
+    "downloadPath": "/__down",
+    "uploadPath": "/__up"
+  }
+}

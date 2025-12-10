@@ -1,0 +1,57 @@
+{
+  "name": "gaming-dns-optimizer",
+  "version": "0.1.0",
+  "description": "Electron app to benchmark and apply the best DNS for gaming, with restriction checks.",
+  "main": "src/main.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "build": "electron-builder",
+    "build:portable": "electron-builder --win portable",
+    "postinstall": "electron --version || true",
+    "test:node": "node scripts/dev-test.js"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "sudo-prompt": "^9.2.1"
+  },
+  "build": {
+    "appId": "com.example.gaming-dns-optimizer",
+    "productName": "Gaming DNS Optimizer",
+    "directories": {
+      "buildResources": "build"
+    },
+    "files": [
+      "src/**/*",
+      "lib/**/*",
+      "data/**/*",
+      "package.json"
+    ],
+    "win": {
+      "icon": "build/icon.png",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "mac": {
+      "icon": "build/icon.png",
+      "target": "dmg"
+    },
+    "linux": {
+      "icon": "build/icon.png",
+      "target": "AppImage"
+    }
+  }
+}

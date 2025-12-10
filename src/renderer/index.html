@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaming DNS Optimizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="spinner"></div>
+      <h2>Gaming DNS Optimizer</h2>
+      <p>Initializing network tests...</p>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-content">
+      <div>
+        <h1>Gaming DNS Optimizer</h1>
+        <p>Benchmarks DNS for latency, jitter, loss, and throughput. Suggests the best and applies with one click.</p>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" title="Toggle Dark Mode">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="controls">
+        <button id="btn-quick">Quick Scan</button>
+        <button id="btn-full">Full Scan</button>
+        <button id="btn-apply-top" disabled>Apply Best DNS</button>
+        <button id="btn-revert">Revert DNS</button>
+        <button id="btn-flush">Flush DNS Cache</button>
+        <span class="spacer"></span>
+        <label class="small">Test count (legacy ping):
+          <input type="number" id="test-count" value="8" min="3" max="20" />
+        </label>
+      </div>
+      <div id="status"></div>
+      <table id="results">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Provider</th>
+            <th>Servers</th>
+            <th>Ping avg (ms)</th>
+            <th>Jitter (ms)</th>
+            <th>Loss (%)</th>
+            <th>Down (Mbps)</th>
+            <th>Up (Mbps)</th>
+            <th>Score</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Test Website Access with DNS</h2>
+      <div class="controls">
+        <label class="small">
+          DNS Server:
+          <input type="text" id="test-dns" placeholder="e.g., 1.1.1.1" />
+        </label>
+        <label class="small">
+          Website:
+          <input type="text" id="test-website" placeholder="e.g., nvidia.com" />
+        </label>
+        <button id="btn-test-dns-site">Test Access</button>
+      </div>
+      <div id="dns-test-result"></div>
+      
+      <h2>Restricted sites check</h2>
+      <div>
+        <button id="btn-check-sites">Check Sites (Current DNS)</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
