@@ -87,7 +87,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/gaming-dns-optimizer.git
+git clone https://github.com/PunisherCCC/gaming-dns-optimizer.git
 cd gaming-dns-optimizer
 
 # Install dependencies
@@ -346,3 +346,4 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 [⬆ Back to Top](#-gaming-dns-optimizer)
 
 </div>
+
